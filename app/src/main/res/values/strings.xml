@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Contactos</string>
+    <string name="hint_name">Nombre Completo</string>
+    <string name="hint_date">Fecha Nacimiento</string>
+    <string name="hint_phone">Telefono</string>
+    <string name="hint_email">Correo</string>
+    <string name="hint_description">Descripcion Contacto</string>
+    <string name="ems">10</string>
+    <string name="hint_siguiente">Siguiente</string>
+    <string name="hint_editar">Editar Datos</string>
+    <string name="single_line">1</string>
+    <string name="memo_line">20</string>
+    <string name="pnombre">pnombre</string>
+    <string name="pfecha">pfecha</string>
+    <string name="ptelefono">ptelefono</string>
+    <string name="pcorreo">pcorreo</string>
+    <string name="pdescripcion">pdescripcion</string>
+    <string name="action_settings">Settings</string>
+    <string name="abreFecha">Fecha Nacimiento:</string>
+    <string name="abreTel">Tel:</string>
+    <string name="abreCorreo">Correo:</string>
+    <string name="abreDes">Descripcion:</string>
+</resources>

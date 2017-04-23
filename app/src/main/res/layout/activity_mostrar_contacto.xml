@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/leftLayout"
+    android:layout_marginTop="@dimen/leftLayout"
+    android:layout_marginLeft="@dimen/leftLayout"
+    android:layout_marginRight="@dimen/leftLayout"
+    tools:context="com.softnopal.semanadosfinal.MostrarContacto">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:id="@+id/llAreaContacto">
+
+    <TextView
+        android:id="@+id/tvConfirmar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:text="Confirmar Datos"
+        android:inputType="none"/>
+
+        <TextView
+            android:id="@+id/tvNombre"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Aurelio Rodriguez"
+            android:inputType="none"/>
+
+        <TextView
+            android:id="@+id/tvFecha"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="25/09/1975"
+            android:inputType="none"/>
+
+        <TextView
+            android:id="@+id/tvTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="477204007"
+            android:inputType="none"/>
+
+        <TextView
+            android:id="@+id/tvCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="jarodrig00@gmail.com"
+            android:inputType="none"/>
+
+        <TextView
+            android:id="@+id/tvDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="El mas guapo"
+            android:maxLines="@string/memo_line"
+            android:inputType="none"/>
+
+        <Button
+            android:id="@+id/btnEditar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@color/blanco"
+            android:text="@string/hint_editar"
+            android:textAllCaps="false"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="left">32dp</dimen>
+    <dimen name="leftLayout">16dp</dimen>
+</resources>

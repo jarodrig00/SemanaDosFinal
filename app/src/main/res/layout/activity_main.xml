@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/leftLayout"
+    android:layout_marginTop="@dimen/leftLayout"
+    android:layout_marginLeft="@dimen/leftLayout"
+    android:layout_marginRight="@dimen/leftLayout"
+    tools:context="com.softnopal.semanadosfinal.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/llAreaNombre">
+
+        <ImageView
+            android:id="@+id/ivNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/user_48"
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/left"
+            >
+
+            <EditText
+                android:id="@+id/etNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="@string/ems"
+                android:hint="@string/hint_name"
+                android:inputType="text"
+                android:maxLines="@string/single_line"
+                />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/llAreaFecha"
+        android:layout_below="@+id/llAreaNombre"
+        android:onClick="showDatePickerDialog">
+
+        <ImageView
+            android:id="@+id/ivFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/calendar_48"
+            />
+
+
+        <TextView
+            android:id="@+id/tvFechaC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/left"
+            android:ems="@string/ems"
+            android:text="@string/hint_date"
+            android:inputType="none"
+            android:maxLines="@string/single_line"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/llAreaTelefono"
+        android:layout_below="@+id/llAreaFecha">
+
+        <ImageView
+            android:id="@+id/ivTelefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/phone_48"
+            />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/left"
+            >
+
+            <EditText
+                android:id="@+id/etTelefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="@string/ems"
+                android:hint="@string/hint_phone"
+                android:inputType="phone"
+                android:maxLines="@string/single_line"
+                />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/llAreaCorreo"
+        android:layout_below="@+id/llAreaTelefono">
+
+        <ImageView
+            android:id="@+id/ivCorreo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/message_48"
+            />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/left"
+            >
+
+            <EditText
+                android:id="@+id/etCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="@string/ems"
+                android:hint="@string/hint_email"
+                android:inputType="textEmailAddress"
+                android:maxLines="@string/single_line"
+                />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/llAreaDescripcion"
+        android:layout_below="@+id/llAreaCorreo">
+
+        <ImageView
+            android:id="@+id/ivDescripcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/calendar_48"
+            />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/left"
+            >
+
+            <EditText
+                android:id="@+id/etDescripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="@string/ems"
+                android:hint="@string/hint_description"
+                android:inputType="textMultiLine"
+                android:maxLines="@string/memo_line"
+                />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal"
+        android:id="@+id/llAreaSiguiente"
+        android:layout_alignParentBottom="true">
+        
+        <Button
+            android:id="@+id/btnSiguiente"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@color/blanco"
+            android:text="@string/hint_siguiente"/>
+    </LinearLayout>
+</RelativeLayout>
